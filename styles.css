@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+:root {
+  --font-size: 16px;
+  --background: #16132b;
+  --primary-text: #ffffff;
+}
+
+html {
+    font-size: var(--font-size);
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  background-color: var(--background); 
+  margin: 0;               
+  min-height: 100vh;       
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    border-bottom: 0.1px solid var(--primary-text);
+}
+
+p {
+    color: var(--primary-text);
+}
+
+@media (width <= 760px) {
+  header {
+    padding: 0.5rem 1.5rem;
+  }
+}
