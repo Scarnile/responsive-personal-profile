@@ -3,8 +3,8 @@
 :root {
   --font-size: 16px;
   --background: #080e1a;
-  --primary-text: #4a8db7;
-  --secondary-text: #3d637e;
+  --primary-text: #3d637e;
+  --secondary-text: #5a7490;
   --foreground: #d4dde8;
 }
 
@@ -25,16 +25,16 @@ body {
 }
 
 .description-text {
-    color: var(--secondary-text);
+    color: var(--primary-text);
     text-align: center;
 }
 
 header {
     display: flex;
-    color: var(--secondary-text);
+    color: var(--primary-text);
     justify-content: space-between;
     padding: 9px 0px;
-    border-bottom: 0.1px solid var(--secondary-text);
+    border-bottom: 0.1px solid var(--primary-text);
     margin-bottom: 40px;
 }
 
@@ -60,12 +60,12 @@ p {
 }
 
 .hero-text h3 {
-    color: var(--secondary-text);
+    color: var(--primary-text);
     font-weight: 100;
 }
 
 .hero-text h4 {
-    color: #5a7490;
+    color: var(--secondary-text);
     font-weight: 100;
 }
 
