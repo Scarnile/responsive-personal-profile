@@ -24,6 +24,11 @@ body {
   min-height: 100vh;       
 }
 
+.description-text {
+    color: var(--secondary-text);
+    text-align: center;
+}
+
 header {
     display: flex;
     color: var(--secondary-text);
@@ -51,7 +56,7 @@ p {
 
 .hero-text {
     /* flex-grow: 6; */
-    
+    margin-bottom: 30px;
 }
 
 .hero-text h3 {
