@@ -2,8 +2,9 @@
 
 :root {
   --font-size: 16px;
-  --background: #16132b;
-  --primary-text: #ffffff;
+  --background: #080e1a;
+  --primary-text: #4a8db7;
+  --foreground: #d4dde8;
 }
 
 html {
@@ -13,15 +14,20 @@ html {
 
 body {
   background-color: var(--background); 
-  margin: 0;               
+  margin: 0;             
+  padding: 0rem 14rem;  
   min-height: 100vh;       
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 3rem;
+    padding: 0.5rem 1rem;
     border-bottom: 0.1px solid var(--primary-text);
+}
+
+main {
+    color: var(--foreground);
 }
 
 p {
@@ -29,7 +35,10 @@ p {
 }
 
 @media (width <= 760px) {
-  header {
-    padding: 0.5rem 1.5rem;
-  }
+    body{
+        padding: 0rem 1rem;
+    }
+    header {
+        padding: 0.5rem 1.5rem;
+    }
 }
