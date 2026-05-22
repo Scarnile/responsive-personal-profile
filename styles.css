@@ -153,7 +153,7 @@ progress::-webkit-progress-value {
         justify-content: center;
     }
     body{
-        margin: 0px 200px;
+        margin: 0px 10rem;
     }
     .hero-content {
         flex:4;
@@ -177,5 +177,11 @@ progress::-webkit-progress-value {
     }
     .skill-header{
         width: 100%;
+    }
+
+    @media (width <= 1024px) {
+        .hero-section {
+            width: 100%;
+        }
     }
 }
