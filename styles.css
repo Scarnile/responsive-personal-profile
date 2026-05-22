@@ -161,6 +161,10 @@ progress::-webkit-progress-value {
     gap: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
     all: unset;
     cursor: pointer;
@@ -169,12 +173,23 @@ button {
     font-weight: 600;
     border-radius: 5px;
     padding: 7px 10px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    /* transform: translateY(-2px); */
+    opacity: 0.8;
 }
 
 .alt-button {
     background: none;
     border: solid var(--color-accent-dark) 1px;
     color: var(--color-accent-dark);
+}
+
+.alt-button:hover {
+    background-color: var(--color-accent-dark);
+    color: var(--foreground);
 }
 
 @media (width >= 760px) {
