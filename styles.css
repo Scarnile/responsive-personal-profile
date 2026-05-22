@@ -219,6 +219,10 @@ button:hover {
         width: 100%;
         /* color: red; */
     }
+    .profile-description {
+        padding-right: min(13em, 14%);
+        box-sizing: border-box;
+    }
     .hero-content {
         flex:4;
         justify-content: flex-start;
