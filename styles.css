@@ -69,7 +69,10 @@ p {
 }
 
 .hero-content {
-    /* flex-grow: 6; */
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -95,6 +98,7 @@ img {
 }
 
 .skills-section {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -142,13 +146,36 @@ progress::-webkit-progress-value {
 
 @media (width >= 760px) {
     .skill-item {
-        width: 300px;
+        width: 100%;
+    }
+    main {
+        display: flex;
+        justify-content: center;
     }
     body{
         margin: 0px 200px;
     }
+    .hero-content {
+        flex:4;
+        box-sizing: border-box;
+        padding: 0px 20px;
+        text-align: left;
+    }
+    .hero-section {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        /* gap: 30px; */
+    }
     .profile-description {
-        width: 400px;
+        width: 100%;
         margin-bottom: 20px;
+        text-align: left;
+    }
+    progress {
+        width: 100%;
+    }
+    .skill-header{
+        width: 100%;
     }
 }
