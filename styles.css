@@ -216,11 +216,12 @@ button:hover {
     }
     .profile-role, .profile-name, .profile-details {
         text-align: left;
+        width: 100%;
         /* color: red; */
     }
     .hero-content {
         flex:4;
-        justify-content: start;
+        justify-content: flex-start;
         box-sizing: border-box;
         padding: 0px 20px;
         text-align: left;
