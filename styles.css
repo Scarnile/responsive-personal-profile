@@ -57,6 +57,7 @@ p {
 }
 
 .hero-row {
+    width: 100%;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -64,17 +65,17 @@ p {
     text-align: center;
 }
 
-.hero-text {
+.right-side {
     /* flex-grow: 6; */
     margin-bottom: 30px;
 }
 
-.hero-text h3 {
+.right-side h3 {
     color: var(--primary-text);
     font-weight: 100;
 }
 
-.hero-text h4 {
+.right-side h4 {
     color: var(--secondary-text);
     font-weight: 100;
 }
@@ -91,11 +92,13 @@ img {
 
 .skills-section {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 5px;
+    align-items: center;
 }
 
-.skills-section h3{
+.skills-section h2{
     text-align: center;
     color: var(--secondary-text);
     font-weight: 100;
@@ -106,6 +109,7 @@ li {
 }
 
 .skill-text {
+    width: 300px;
     display: flex;
     justify-content: space-between;
 }
@@ -132,17 +136,15 @@ progress::-moz-progress-bar {
   border-radius: 10px;
 }
 
-/* @media (width <= 760px) {
+@media (width >= 760px) {
+    .skill-bar {
+        width: 300px;
+    }
     body{
-        padding: 0rem 1rem;
+        margin: 0px 200px;
     }
-    header {
-        padding: 0.5rem 1.5rem;
+    .description-text {
+        width: 400px;
+        margin-bottom: 30px;
     }
-    img {
-        width: 150px;
-    }
-    .hero-text {
-        text-align: center;
-    }
-} */
+}
