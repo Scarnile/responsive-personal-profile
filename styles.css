@@ -28,7 +28,8 @@ html {
 body {
   background-color: var(--background); 
   margin: 0;             
-  padding: 0rem 1rem;
+  padding: 0 min(50rem, 5%);
+  
   min-height: 100vh;       
 }
 
@@ -74,11 +75,13 @@ p {
 }
 
 .hero-content {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
+  flex: 1 1 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 30px;
 }
 
 .hero-content .profile-role {
@@ -98,7 +101,9 @@ p {
 
 img {
   object-fit: cover;
-  width: 200px;
+  width: clamp(190px, 25vw, 220px);
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
   max-width: 100%;
 }
 
@@ -183,12 +188,20 @@ button {
         display: flex;
         justify-content: center;
     }
-    body{
-        margin: 0px 20rem;
+    body {
+        background-color: var(--background);
+        margin: 0;
+        /* padding: 0 max(3rem, 20%); */
+        padding: 0px min(25rem, 18%);
+        /* padding: 0 clamp(1rem, 17rem, 20rem); */
+        min-height: 100vh;
+
+        max-width: 1200px;
+        margin-inline: auto;
     }
     .profile-role, .profile-name, .profile-details {
         text-align: left;
-        color: red;
+        /* color: red; */
     }
     .hero-content {
         flex:4;
@@ -200,8 +213,11 @@ button {
     .hero-section {
         width: 100%;
         display: flex;
+        /* flex-wrap: wrap; */
+        align-items: flex-start;
         justify-content: center;
-        /* gap: 30px; */
+        gap: 2rem;
+        text-align: center;
     }
     .profile-description {
         width: 100%;
@@ -215,12 +231,12 @@ button {
         width: 100%;
     }
 
-    @media (width <= 1024px) {
+    /* @media (width <= 1024px) {
         body{
             margin: 0px 200px;
         }
         .hero-section {
             width: 100%;
         }
-    }
+    } */
 }
