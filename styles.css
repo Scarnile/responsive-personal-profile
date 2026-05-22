@@ -160,9 +160,15 @@ button {
     cursor: pointer;
     background-color: #3a7da7;
     color: var(--foreground);
-    font-weight: bold;
+    font-weight: 600;
     border-radius: 5px;
     padding: 7px 10px;
+}
+
+.alt-button {
+    background: none;
+    border: solid var(--color-accent-dark) 1px;
+    color: var(--color-accent-dark);
 }
 
 @media (width >= 760px) {
