@@ -9,6 +9,11 @@
   --color-text-primary: #3d637e;
   --color-text-secondary: #7b94b4;
   --color-text-muted: #4d6788;  
+
+  /* Accent Colors */
+  --color-accent: #58d6d2;
+  --color-accent-soft: #4f8fd4;
+  --color-accent-dark: #275c96;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -104,6 +109,7 @@ img {
     flex-direction: column;
     gap: 5px;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .skills-section h2{
@@ -142,7 +148,22 @@ progress::-webkit-progress-value {
     color: var(--color-text-secondary);
 }
 
+.buttons-section {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    gap: 10px;
+}
 
+button {
+    all: unset;
+    cursor: pointer;
+    background-color: #3a7da7;
+    color: var(--foreground);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 7px 10px;
+}
 
 @media (width >= 760px) {
     .skill-item {
