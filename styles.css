@@ -123,7 +123,7 @@ li {
 }
 
 .skill-header {
-    width: 300px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -146,11 +146,12 @@ progress::-webkit-progress-value {
 
 .skill-item {
     color: var(--color-text-secondary);
+    width: 100%;
 }
 
 .buttons-section {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     width: 100%;
     gap: 10px;
 }
@@ -175,21 +176,29 @@ button {
     .skill-item {
         width: 100%;
     }
+    .buttons-section {
+        justify-content: left;
+    }
     main {
         display: flex;
         justify-content: center;
     }
     body{
-        margin: 0px 10rem;
+        margin: 0px 20rem;
+    }
+    .profile-role, .profile-name, .profile-details {
+        text-align: left;
+        color: red;
     }
     .hero-content {
         flex:4;
+        justify-content: start;
         box-sizing: border-box;
         padding: 0px 20px;
         text-align: left;
     }
     .hero-section {
-        width: 60%;
+        width: 100%;
         display: flex;
         justify-content: center;
         /* gap: 30px; */
@@ -207,6 +216,9 @@ button {
     }
 
     @media (width <= 1024px) {
+        body{
+            margin: 0px 200px;
+        }
         .hero-section {
             width: 100%;
         }
